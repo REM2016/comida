@@ -1,0 +1,103 @@
+/*estilo para el título*/
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: red;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to right, #f0f, #0ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+/*estilo para la tabla*/
+/* border-collapse: collapse;: Elimina el espacio entre las celdas.
+    width: 100%;: Hace que la tabla ocupe todo el ancho disponible.
+    border: 1px solid black;: Agrega un borde de 1px a todas las celdas.
+    padding: 8px;: Añade un espacio interno de 8 píxeles a todas las celdas.
+    text-align: left;: Alinea el texto a la izquierda en todas las celdas.
+    tr:nth-child(even) { background-color: #f2f2f2; }: Aplica un color de fondo gris a todas las filas pares.*/
+/*Centrar la tabla: margin: 0 auto;
+	Cambiar el color de fondo de una fila específica: tr:nth-child(3) { background-color: yellow; }
+	Aplicar estilos a las celdas de encabezado: th { background-color: #4CAF50; color: white; }
+	Crear un efecto de hover: tr:hover { background-color: #ddd; }*/
+
+
+/*efecto de botones a la tabla*/
+.tabla td {
+    background-color: #4CAF50;
+    /* Color de fondo verde */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 4px;
+    /* Esquinas redondeadas */
+    cursor: pointer;
+    /* Cambia el cursor al pasar el ratón */
+    /* display: inline-block; */
+    /* Esta línea puede ser removida */
+    /* text-decoration: none; */
+    /* Esta línea puede ser removida */
+}
+
+
+.tabla td:hover {
+    background-color: #3e8e41;
+    /* Color de fondo más oscuro al pasar el ratón */
+}
+
+.articulos {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.border {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #3e8e41;
+}
+
+
+
+/*productos css*/
+.producto {
+    border-color: blue;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.producto tr {
+    background-color: #e7ed61;
+    background-color: #f2f2f2;
+}
+
+.producto th,
+td {
+    font-family: arial;
+    font-size: 15px;
+    border: 3px solid green;
+    padding: 8px;
+    /*ancho de la celda td*/
+    text-align: 1;
+    background-color: grey;
+}
+
+/*fondo de la página*/
+.fondo {
+    background-image: url('../img/fon.jpg');
+    background-size: cover;
+    background-color: grey;
+}

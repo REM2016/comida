@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="css/estilo_contacto.css">
+</head>
+
+<body class="fondo">
+    <div class="container">
+        <h1>Contáctanos</h1>
+    
+          <form action="mailto:tu_correo@ejemplo.com" method="post" enctype="text/plain">
+            
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>  
+        <br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+        <label for="mensaje">Mensaje:</label>  
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+      </form>  
+    </div>
+      <p>
+          #form>: Define el formulario.
+          <br>
+        action="mailto:tu_correo@ejemplo.com": Especifica que el formulario enviará los datos al correo electrónico indicado. Reemplaza "tu_correo@ejemplo.com" con tu dirección de correo.
+        <br>
+        method="post": Indica que los datos serán enviados usando el método POST.
+        <br>
+        enctype="text/plain": Especifica el tipo de contenido de los datos enviados.
+        <br>
+        #label> y #input>: Crean los campos del formulario:
+        <br>
+        type="text": Campo de texto simple para el nombre.
+        <br>
+        type="email": Campo de texto específico para direcciones de correo electrónico.
+        <br>
+        required: Hace que el campo sea obligatorio.
+        <br>
+        #textarea>: Crea un área de texto para el mensaje.
+        <br>
+        #button>: Crea un botón para enviar el formulario.
+        <br>
+      </p>
+</body>
+</html>
