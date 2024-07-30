@@ -1,52 +1,200 @@
-/*fondo de la página*/
-.fondo {
-    background-image: url('../img/fon.jpg');
-    background-size: cover;
-    background-color: grey;
+/* Variables CSS */
+:root {
+  --primary-color: #4CAF50;
+  --background-color: rgba(242, 242, 242, 0.8);
+  /* Transparente difuminado */
+  --text-color: #333;
+  --border-radius: 5px;
+  --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-/* estiloCon.css */
+
+/* Fondo de la página */
+.fondo {
+  background-image: url('../img/fondo.jpg');
+  background-size: cover;
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Contenedor principal */
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,  
-   0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  animation: fadeIn 1s ease-in-out;
+  margin-top: 20px;
+  /* Espacio para evitar que esté pegado al menú */
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: var(--text-color);
+  animation: fadeIn 1s ease-in-out;
+  margin-bottom: 20px;
+  /* Espacio para evitar que esté pegado al contenido */
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Etiquetas */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Campos de entrada */
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+}
+
+/* Área de texto */
+textarea {
+  height: 150px;
+}
+
+/* Botón */
+button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(76, 175, 80, 0.7);
+  /* Verde traslúcido */
+}
+
+/* Menú de navegación */
+.nav-menu {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(68, 68, 68, 1) 100%);
+  padding: 10px 0;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Asegura que los elementos se ajusten en pantallas pequeñas */
+}
+
+.menu li {
+  margin: 5px 10px;
+  /* Margen pequeño para asegurar espacio entre elementos en pantallas pequeñas */
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.menu a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.menu a:hover {
+  color: #ffffff;
+}
+
+/* Icono del menú */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  h1 {
-    text-align: center;
+
+  to {
+    opacity: 1;
   }
-  
-  form {
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu.show {
     display: flex;
-    flex-direction: column;  
-  
   }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
+
+  .menu {
+    flex-direction: column;
   }
-  
-  input, textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius:  
-   3px;
+
+  .menu li {
+    margin: 10px 0;
   }
-  
-  textarea {
-    height: 150px;
+}
+
+@media (max-width: 480px) {
+  .menu a {
+    padding: 10px 15px;
+    /* Menor padding en pantallas muy pequeñas */
   }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+}

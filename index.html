@@ -1,111 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIENDA_ATLANTICO</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body class="fondo">
-    <h1>TIENDA_ATLANTICO</h1>
-    <br>
+    <header>
+        <h1>ATLANTICO</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="categoria.html">Categorías</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <<table class="tabla">
-        <tr><!-- ES UNA FILA -->
-            <td><a href="categoria.html">Categoria</a></td><!-- ES UNA CELDA -->
-            <td><a href="producto.html">Productos</a></td>
-            <td><a href="contacto.html">Contacto</a></td>
-        </tr>
-    </table>
-    
+    <main class="contenedor">
+        <section class="banner">
+            <h2>¡Descubre nuestras últimas ofertas!</h2>
+            <button>Compra Ahora</button>
+        </section>
 
+        <section class="introduccion">
+            <article class="articulo">
+                <h2>Historia</h2>
+                <p>ATLANTICO nació de la pasión por la tecnología de dos amigos, Ana y David, quienes vieron la oportunidad de crear un espacio donde los entusiastas de los gadgets pudieran encontrar productos de alta calidad y asesoramiento experto. Iniciaron en un pequeño local en el centro de la ciudad, y gracias a su dedicación y visión, ATLANTICO creció rápidamente, expandiendo su catálogo y abriendo nuevas tiendas. Hoy en día, ATLANTICO es sinónimo de innovación y excelencia en el sector tecnológico, con una presencia fuerte tanto en línea como en tiendas físicas.</p>
+            </article>
+        </section>
 
-    <div class="border">
-        <article class="articulos">
-            <p>
-                tu tienda informatica es una tienda
-                especializada en accesorios para dispositivos
-            </p><br>
-            <p>
-                nuestro servicio al cliente es uno de los menjores
-                que puede aver
-            </p><br>
-
-
-        </article>
-    </div>
-
-    <div class="border">
-        <article class="articulos">
-            <h2>valores</h2>
+        <section class="valores">
+            <h3>Valores</h3>
             <ul>
-                <li>
-                    porductos: lo mas actualizado actualmente
-                </li>
-                <li>
-                    Sonido: lo mejor que puedes encontrar
-                </li>
-                <li>
-                    Electrodomesticos: lo menor para el hogar
-                </li>
-            </ul><br>
+                <li>Innovación: Siempre a la vanguardia de las últimas tendencias tecnológicas.</li>
+                <li>Calidad: Solo ofrecemos productos de marcas reconocidas y materiales de primera calidad.</li>
+                <li>Atención al cliente: Brindamos asesoramiento personalizado y un servicio postventa excepcional.</li>
+                <li>Sostenibilidad: Comprometidos con el medio ambiente y la reducción del impacto ambiental.</li>
+            </ul>
+            <h3>Misión</h3>
+            <p>Ser la tienda de referencia en accesorios tecnológicos a nivel nacional, ofreciendo una experiencia de compra única y satisfaciendo las necesidades de los clientes más exigentes.</p>
+            <h3>Visión</h3>
+            <p>Convertirnos en líderes del mercado tecnológico, reconocidos por nuestra innovación, calidad y compromiso con la sostenibilidad, construyendo relaciones duraderas con nuestros clientes y proveedores.</p>
+        </section>
 
-            <h2>MISION</h2>
-            <p>Nuestra mision es mejorar la calidad de vida de cada uno
-                de nuestros clientes y ofrecer el merjor servicio
-            </p>
+        <section class="categorias">
+            <h2>Categorías Principales</h2>
+            <div class="categoria">
+                <h3>Computadoras</h3>
+                <p>Portátiles, Desktops, Tablets</p>
+            </div>
+            <div class="categoria">
+                <h3>Componentes</h3>
+                <p>Tarjetas Gráficas, Procesadores, Memorias RAM</p>
+            </div>
+            <div class="categoria">
+                <h3>Periféricos</h3>
+                <p>Teclados y Ratones, Monitores, Impresoras</p>
+            </div>
+            <div class="categoria">
+                <h3>Software</h3>
+                <p>Sistemas Operativos, Software de Productividad, Antivirus</p>
+            </div>
+        </section>
 
-        </article>
-    </div>
-    <!-- tabla con los productos -->
-    <table class="producto">
-        <thead>
-            <tr>
-                <th style="width: 200px;">IMAGEN</th>
-                <th style="width: 300px;">DESCRIPCIÓN</th>
-                <th style="width: 100px;">PRECIO</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td><img src="img/laptop.jpg" width="200"></td>
-                <td>
-                    <p> Una laptop, también conocida como portátil o notebook, es un ordenador personal diseñado para
-                        ser portátil y fácil de transportar. A diferencia de una computadora de escritorio, una laptop
-                        integra todos sus componentes (pantalla, teclado, touchpad, batería, etc.) en una sola unidad.
-                    </p>
-                </td>
-                <td>Q. 5000.00</td>
-            </tr>
-            <tr>
-                <td><img src="img/audifono.jpg" width="200"></td>
-                <td>
-                    <p>
-                        Un audífono capta el sonido a través de un micrófono, lo amplifica y lo envía al oído a través
-                        de un altavoz pequeño. Los modelos más modernos pueden ajustar la amplificación según las
-                        necesidades individuales de cada persona y pueden incluso reducir el ruido de fondo.
-                    </p>
-                </td>
-                <td>Q. 500.00</td>
-            </tr>
-            <tr>
-                <td><img src="img/teclado.jpg" width="200"></td>
-                <td>
-                    <p>
-                        Un teclado es un dispositivo de entrada que utilizamos para introducir información en una
-                        computadora. Imagina que es como un traductor entre nosotros y la máquina: al presionar las
-                        teclas, estamos enviando instrucciones a la computadora para que realice diferentes acciones.
-                    </p>
-                </td>
-                <td>Q. 600.00</td>
-            </tr>
-        </tbody>
-    </table>
-
-
+        <section class="testimonios">
+            <h2>Testimonios de Clientes</h2>
+            <div class="testimonio">
+                <p>"La mejor tienda para comprar tecnología, excelentes precios y servicio." - Juan Pérez</p>
+            </div>
+            <div class="testimonio">
+                <p>"Encuentro todo lo que necesito para mi PC en un solo lugar." - María García</p>
+            </div>
+            <div class="testimonio">
+                <p>"Recomiendo 100% esta tienda, siempre tienen las últimas novedades." - Carlos López</p>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

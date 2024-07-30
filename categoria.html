@@ -5,10 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/estilos_categoria.css">
 </head>
 
 <body class="fondo">
+    <header>
+        <h1>ATLANTICO</h1>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img src="img/menu.png" alt="Menu">
+        </div>
+        <nav class="nav-menu">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categoria.html">Categorías</a></li>
+                <li><a href="producto.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show');
+        }
+    </script>
 
 
 </body>
